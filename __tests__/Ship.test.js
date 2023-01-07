@@ -1,7 +1,7 @@
-const ship = require('../src/hip.js');
+const Ship = require('../src/ship.js');
 
 describe('Ship', () => {
-    it('can be instantiated', () => {
-        expect(new Ship()).toBeInstanceOf(object);
+   it('can be instantiated', () => { 
+        expect(new Ship()).toBeInstanceOf(Object);
     });
 });
