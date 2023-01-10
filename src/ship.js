@@ -1,10 +1,10 @@
 function Ship(name) {
-    this.startingPort = 'Dover';
+    this.currentPort = 'Dover';
 }
 
 Ship.prototype = {
     setSail() {
-      this.startingPort = false;
+      this.currentPort = false;
     },
   };
 
