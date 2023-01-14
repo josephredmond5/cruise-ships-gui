@@ -13,12 +13,14 @@ describe('Ship', () => {
     });
 
     it('can set sail', () => {
-        const ship = new Ship('Dover');
-        
+        const port = new Port('Dover');
+        const ship = new Ship(port);
+      
         ship.setSail();
-
+      
         expect(ship.currentPort).toBeFalsy();
-    });
+        expect(ship.previousPort).toBe(port);
+      });
 
     it('can dock at a different port', () => {
         const dover = new Port('Dover');
