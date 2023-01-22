@@ -1,6 +1,7 @@
 const Ship = require('../src/ship.js');
 const Port = require('../src/port.js');
-const Itinerary = require('../src/Itinerary');
+const Itinerary = require('../src/Itinerary.js');
+
 
 
 describe('Ship', () => {
@@ -53,5 +54,9 @@ describe('Ship', () => {
       
         expect(() => ship.setSail()).toThrowError('End of itinerary reached');
       });
-
 });   
+
+
+
+
+
