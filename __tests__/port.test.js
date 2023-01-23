@@ -34,4 +34,4 @@ describe('Port', () => {
 
         expect(port.ships).toEqual([titanic]);
       })
-});
+    });
