@@ -3,10 +3,15 @@ const Port = require("../src/Port.js");
 
 
 
+
 describe('Port', () => {
-    it('can be an instance of an Object', () => {
-        expect(new Port()).toBeInstanceOf(Object)
-    });
+  describe('name, add & remove ship', () => {
+      let port;
+      let ship;
+      beforeEach(() => {
+          ship = {};
+          port = new Port('Dover',[ship]);
+      });
 
     it('returns name of Port', () => {
         const port = new Port('Dover');
@@ -34,4 +39,5 @@ describe('Port', () => {
 
         expect(port.ships).toEqual([titanic]);
       })
-    });
+    })
+})
